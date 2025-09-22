@@ -6,6 +6,10 @@
    
   
 }
+.special{
+  margin-top: 100px;
+}
+
 
  .hero{
     height: 100vh;
@@ -17,6 +21,35 @@
     
     
 } 
+.fixed-top {
+  transition: all 0.3s ease;
+}
+
+
+.fixed-top.transparent {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.fixed-top.transparent i,
+.fixed-top.transparent span {
+  color: white !important;
+}
+.fixed-top.scrolled i,
+.fixed-top.scrolled span {
+  color: black !important;
+}
+
+
+.fixed-top.scrolled {
+  background: rgb(73, 147, 120) !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Hide navbar when scrolling down */
+.fixed-top.hide {
+  transform: translateY(-100%);
+}
 .heading svg{
     height: 5vh;
 }
@@ -311,6 +344,9 @@
 .third{
   padding-left: 20px;
 }
+.model{
+  height: 100vh;
+}
 }
 .primary-outline-path {
   fill:none;
@@ -336,11 +372,12 @@
     }
     @media screen and (min-width:700px){
       .row {
-      margin: 0 10vh;
+      margin: 0 20vh;
     }
      .hero-img {
       width: 70%;
       height: auto;
+      margin-left:70px;
       object-fit: cover;
     }
     }
