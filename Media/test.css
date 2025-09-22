@@ -1,0 +1,22 @@
+/* .image{
+height: 50vh;
+width: 50vh !important;
+background-image: url(Images/Work.jpg);
+background-position: center;
+ background-size: cover;
+ object-fit: cover;
+
+
+ 
+}  */
+.content{
+  background-color: blue;
+  color:red;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+}
+.hero-img {
+      /* width: 50%; */
+      height: auto;
+      object-fit: cover;
+    }
